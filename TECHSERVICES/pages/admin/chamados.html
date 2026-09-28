@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Gerenciamento de chamados da TechServices."
+    >
+
+    <title>Chamados | TechServices</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+</head>
+
+<body class="portal">
+
+    <div class="portal-layout">
+
+        <!-- ==============================
+             MENU
+        ================================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../../index.html" class="logo logo-sidebar">
+                    TECH<span>SERVICES</span>
+                </a>
+
+                <div class="usuario-resumo">
+
+                    <div class="avatar">
+                        AD
+                    </div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <span>Equipe TechServices</span>
+                    </div>
+
+                </div>
+
+                <nav class="sidebar-nav" aria-label="Menu administrativo">
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span>01</span>
+                        Dashboard
+                    </a>
+
+                    <a href="chamados.html" class="nav-item ativo">
+                        <span>02</span>
+                        Chamados
+                    </a>
+
+                    <a href="detalhes-chamado.html" class="nav-item">
+                        <span>03</span>
+                        Atendimento
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="suporte-sidebar">
+
+                    <small>PAINEL ADMINISTRATIVO</small>
+
+                    <p>
+                        Gerencie os atendimentos da TechServices.
+                    </p>
+
+                </div>
+
+                <a href="../../index.html" class="sair">
+                    ← Sair do painel
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ==============================
+             CONTEÚDO
+        ================================= -->
+
+        <main class="portal-main">
+
+            <header class="portal-header">
+
+                <div>
+
+                    <span class="tag">
+                        ATENDIMENTO
+                    </span>
+
+                    <h1>Chamados</h1>
+
+                    <p>
+                        Consulte, filtre e gerencie todas as solicitações.
+                    </p>
+
+                </div>
+
+                <div class="contador-chamados">
+                    26 chamados
+                </div>
+
+            </header>
+
+
+            <!-- ==============================
+                 FILTROS
+            ================================= -->
+
+            <section class="filtros-card">
+
+                <div class="filtro-busca">
+
+                    <label for="buscar">
+                        Buscar chamado
+                    </label>
+
+                    <input
+                        type="search"
+                        id="buscar"
+                        placeholder="Número, cliente ou assunto..."
+                    >
+
+                </div>
+
+
+                <div class="filtro-item">
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <select id="status">
+
+                        <option value="todos">
+                            Todos
+                        </option>
+
+                        <option value="aberto">
+                            Aberto
+                        </option>
+
+                        <option value="andamento">
+                            Em andamento
+                        </option>
+
+                        <option value="resolvido">
+                            Resolvido
+                        </option>
+
+                        <option value="cancelado">
+                            Cancelado
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filtro-item">
+
+                    <label for="prioridade">
+                        Prioridade
+                    </label>
+
+                    <select id="prioridade">
+
+                        <option value="todas">
+                            Todas
+                        </option>
+
+                        <option value="alta">
+                            Alta
+                        </option>
+
+                        <option value="media">
+                            Média
+                        </option>
+
+                        <option value="baixa">
+                            Baixa
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filtro-item">
+
+                    <label for="categoria">
+                        Categoria
+                    </label>
+
+                    <select id="categoria">
+
+                        <option value="todas">
+                            Todas
+                        </option>
+
+                        <option value="software">
+                            Software
+                        </option>
+
+                        <option value="hardware">
+                            Hardware
+                        </option>
+
+                        <option value="rede">
+                            Rede
+                        </option>
+
+                        <option value="outros">
+                            Outros
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="botao-filtro"
+                    id="limpar-filtros"
+                >
+                    Limpar filtros
+                </button>
+
+            </section>
+
+
+            <!-- ==============================
+                 LISTA
+            ================================= -->
+
+            <section class="admin-lista-card">
+
+                <div class="lista-cabecalho">
+
+                    <div>
+
+                        <span class="tag">
+                            SOLICITAÇÕES
+                        </span>
+
+                        <h2>
+                            Todos os chamados
+                        </h2>
+
+                    </div>
+
+                    <span id="resultado-filtro">
+                        26 resultados
+                    </span>
+
+                </div>
+
+
+                <div class="chamados-admin-lista" id="lista-chamados">
+
+
+                    <!-- CHAMADO 1024 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="andamento"
+                        data-prioridade="alta"
+                        data-categoria="software"
+                    >
+
+                        <div class="chamado-numero">
+                            #1024
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Não consigo acessar o sistema
+                            </strong>
+
+                            <span>
+                                Maria Eduarda · Aberto hoje às 09:42
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Software
+                        </span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span class="status andamento">
+                            Em andamento
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 1023 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="aberto"
+                        data-prioridade="alta"
+                        data-categoria="hardware"
+                    >
+
+                        <div class="chamado-numero">
+                            #1023
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Computador apresentando lentidão
+                            </strong>
+
+                            <span>
+                                João Santos · Aberto hoje às 08:31
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Hardware
+                        </span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span class="status aberto">
+                            Aberto
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 1022 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="andamento"
+                        data-prioridade="media"
+                        data-categoria="rede"
+                    >
+
+                        <div class="chamado-numero">
+                            #1022
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Instabilidade na conexão
+                            </strong>
+
+                            <span>
+                                Carlos Mendes · Ontem às 16:20
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Rede
+                        </span>
+
+                        <span class="prioridade media">
+                            Média
+                        </span>
+
+                        <span class="status andamento">
+                            Em andamento
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 1021 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="aberto"
+                        data-prioridade="alta"
+                        data-categoria="rede"
+                    >
+
+                        <div class="chamado-numero">
+                            #1021
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Problema na conexão de internet
+                            </strong>
+
+                            <span>
+                                Ana Oliveira · Ontem às 14:05
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Rede
+                        </span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span class="status aberto">
+                            Aberto
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 1020 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="resolvido"
+                        data-prioridade="baixa"
+                        data-categoria="software"
+                    >
+
+                        <div class="chamado-numero">
+                            #1020
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Erro ao atualizar aplicativo
+                            </strong>
+
+                            <span>
+                                Pedro Henrique · 22/08/2026
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Software
+                        </span>
+
+                        <span class="prioridade baixa">
+                            Baixa
+                        </span>
+
+                        <span class="status resolvido">
+                            Resolvido
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 1019 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="resolvido"
+                        data-prioridade="media"
+                        data-categoria="hardware"
+                    >
+
+                        <div class="chamado-numero">
+                            #1019
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Teclado não reconhecido
+                            </strong>
+
+                            <span>
+                                Beatriz Lima · 21/08/2026
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Hardware
+                        </span>
+
+                        <span class="prioridade media">
+                            Média
+                        </span>
+
+                        <span class="status resolvido">
+                            Resolvido
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 1018 -->
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="chamado-admin"
+                        data-status="aberto"
+                        data-prioridade="media"
+                        data-categoria="software"
+                    >
+
+                        <div class="chamado-numero">
+                            #1018
+                        </div>
+
+                        <div class="chamado-info">
+
+                            <strong>
+                                Acesso bloqueado
+                            </strong>
+
+                            <span>
+                                Gabriel Costa · 21/08/2026
+                            </span>
+
+                        </div>
+
+                        <span class="categoria-admin">
+                            Software
+                        </span>
+
+                        <span class="prioridade media">
+                            Média
+                        </span>
+
+                        <span class="status aberto">
+                            Aberto
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- PAGINAÇÃO -->
+
+                <div class="paginacao">
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Página anterior"
+                    >
+                        ←
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagina-ativa"
+                    >
+                        1
+                    </button>
+
+                    <button type="button">
+                        2
+                    </button>
+
+                    <button type="button">
+                        3
+                    </button>
+
+                    <span>...</span>
+
+                    <button type="button">
+                        4
+                    </button>
+
+                    <button
+                        type="button"
+                        aria-label="Próxima página"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../../js/admin-chamados.js"></script>
+
+</body>
+
+</html>

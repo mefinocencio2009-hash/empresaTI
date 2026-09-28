@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Acesse o Portal TechServices."
+    >
+
+    <title>Login | TechServices</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+
+<body class="pagina-login">
+
+    <main class="login-container">
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="login-apresentacao">
+
+            <a href="../index.html" class="logo logo-login">
+                TECH<span>SERVICES</span>
+            </a>
+
+            <div class="login-mensagem">
+
+                <span class="tag">
+                    PORTAL DE ATENDIMENTO
+                </span>
+
+                <h1>
+                    Seu suporte,
+                    <span>mais simples.</span>
+                </h1>
+
+                <p>
+                    Acesse o portal para abrir chamados,
+                    acompanhar atendimentos e encontrar
+                    soluções para os seus problemas de TI.
+                </p>
+
+            </div>
+
+
+            <div class="login-beneficios">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Abra chamados rapidamente</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Acompanhe o andamento</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Tenha suporte especializado</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+
+        <section class="login-formulario">
+
+            <div class="formulario-conteudo">
+
+                <div class="formulario-cabecalho">
+
+                    <span class="tag">
+                        BEM-VINDO(A)
+                    </span>
+
+                    <h2>
+                        Entrar no portal
+                    </h2>
+
+                    <p>
+                        Informe seus dados para acessar sua conta.
+                    </p>
+
+                </div>
+
+
+                <form id="form-login">
+
+                    <!-- E-MAIL -->
+
+                    <div class="campo">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seu@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <small
+                            class="mensagem-erro"
+                            id="erro-email"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- SENHA -->
+
+                    <div class="campo">
+
+                        <div class="campo-label">
+
+                            <label for="senha">
+                                Senha
+                            </label>
+
+                            <a
+                                href="#"
+                                class="link-pequeno"
+                            >
+                                Esqueci minha senha
+                            </a>
+
+                        </div>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <small
+                            class="mensagem-erro"
+                            id="erro-senha"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- LEMBRAR -->
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            name="lembrar"
+                        >
+
+                        <span>
+                            Lembrar meu acesso
+                        </span>
+
+                    </label>
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        type="submit"
+                        class="botao botao-login-form"
+                    >
+                        Entrar no Portal
+                    </button>
+
+
+                    <!-- MENSAGEM -->
+
+                    <div
+                        id="mensagem-login"
+                        class="mensagem-login"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+
+                <!-- CADASTRO -->
+
+                <div class="login-separador">
+                    <span>ou</span>
+                </div>
+
+
+                <div class="login-ajuda">
+
+                    <p>
+                        Ainda não possui uma conta?
+                    </p>
+
+                    <a href="cliente/cadastro.html">
+                        Criar minha conta
+                    </a>
+
+                </div>
+
+
+                <!-- VOLTAR -->
+
+                <a
+                    href="../index.html"
+                    class="voltar-site"
+                >
+                    ← Voltar para o site
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

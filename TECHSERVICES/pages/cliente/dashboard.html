@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Dashboard do cliente TechServices.">
+
+    <title>Dashboard | TechServices</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+</head>
+
+<body class="portal">
+
+    <div class="portal-layout">
+
+        <!-- Menu lateral -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../../index.html" class="logo logo-sidebar">
+                    TECH<span>SERVICES</span>
+                </a>
+
+                <div class="usuario-resumo">
+
+                    <div class="avatar">
+                        MD
+                    </div>
+
+                    <div>
+                        <strong>Maria Eduarda</strong>
+                        <span>Cliente</span>
+                    </div>
+
+                </div>
+
+                <nav class="sidebar-nav" aria-label="Menu do portal">
+
+                    <a href="dashboard.html" class="nav-item ativo">
+                        <span>01</span>
+                        Dashboard
+                    </a>
+
+                    <a href="abrir-chamado.html" class="nav-item">
+                        <span>02</span>
+                        Abrir chamado
+                    </a>
+
+                    <a href="chamados.html" class="nav-item">
+                        <span>03</span>
+                        Meus chamados
+                    </a>
+
+                    <a href="perfil.html" class="nav-item">
+                        <span>04</span>
+                        Meu perfil
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="suporte-sidebar">
+                    <small>PRECISA DE AJUDA?</small>
+
+                    <p>
+                        Nossa equipe está pronta para atender você.
+                    </p>
+
+                    <a href="abrir-chamado.html">
+                        Abrir chamado →
+                    </a>
+                </div>
+
+                <a href="../../index.html" class="sair">
+                    ← Sair do portal
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Conteúdo principal -->
+        <main class="portal-main">
+
+            <header class="portal-header">
+
+                <div>
+                    <span class="tag">PORTAL DO CLIENTE</span>
+
+                    <h1>Olá, Maria! 👋</h1>
+
+                    <p>
+                        Acompanhe seus chamados e encontre o suporte que precisa.
+                    </p>
+                </div>
+
+                <a href="abrir-chamado.html" class="botao botao-principal">
+                    + Abrir chamado
+                </a>
+
+            </header>
+
+
+            <!-- Resumo -->
+            <section class="resumo-chamados" aria-label="Resumo dos chamados">
+
+                <article class="resumo-card">
+
+                    <span class="resumo-label">Chamados abertos</span>
+
+                    <strong>03</strong>
+
+                    <span class="resumo-info">
+                        Aguardando atendimento
+                    </span>
+
+                </article>
+
+
+                <article class="resumo-card">
+
+                    <span class="resumo-label">Em andamento</span>
+
+                    <strong>02</strong>
+
+                    <span class="resumo-info">
+                        Em atendimento
+                    </span>
+
+                </article>
+
+
+                <article class="resumo-card">
+
+                    <span class="resumo-label">Resolvidos</span>
+
+                    <strong>08</strong>
+
+                    <span class="resumo-info">
+                        Neste mês
+                    </span>
+
+                </article>
+
+
+                <article class="resumo-card">
+
+                    <span class="resumo-label">Total de chamados</span>
+
+                    <strong>13</strong>
+
+                    <span class="resumo-info">
+                        Todos os períodos
+                    </span>
+
+                </article>
+
+            </section>
+
+
+            <!-- Chamados recentes -->
+            <section class="portal-secao">
+
+                <div class="secao-cabecalho">
+
+                    <div>
+                        <span class="tag">ATIVIDADE RECENTE</span>
+
+                        <h2>Seus chamados</h2>
+                    </div>
+
+                    <a href="chamados.html" class="link-secao">
+                        Ver todos →
+                    </a>
+
+                </div>
+
+
+                <div class="tabela-chamados">
+
+                    <div class="tabela-cabecalho">
+
+                        <span>Chamado</span>
+                        <span>Categoria</span>
+                        <span>Prioridade</span>
+                        <span>Data</span>
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <a href="detalhes-chamado.html" class="chamado-linha">
+
+                        <div>
+                            <strong>#1024</strong>
+                            <span>Não consigo acessar o sistema</span>
+                        </div>
+
+                        <span>Software</span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span>24/08/2026</span>
+
+                        <span class="status andamento">
+                            Em andamento
+                        </span>
+
+                    </a>
+
+
+                    <a href="detalhes-chamado.html" class="chamado-linha">
+
+                        <div>
+                            <strong>#1023</strong>
+                            <span>Computador apresentando lentidão</span>
+                        </div>
+
+                        <span>Hardware</span>
+
+                        <span class="prioridade media">
+                            Média
+                        </span>
+
+                        <span>23/08/2026</span>
+
+                        <span class="status aberto">
+                            Aberto
+                        </span>
+
+                    </a>
+
+
+                    <a href="detalhes-chamado.html" class="chamado-linha">
+
+                        <div>
+                            <strong>#1022</strong>
+                            <span>Instalação de software</span>
+                        </div>
+
+                        <span>Software</span>
+
+                        <span class="prioridade baixa">
+                            Baixa
+                        </span>
+
+                        <span>20/08/2026</span>
+
+                        <span class="status resolvido">
+                            Resolvido
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Informações -->
+            <section class="portal-informacoes">
+
+                <article class="informacao-card">
+
+                    <div class="informacao-numero">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>Precisa de suporte?</h3>
+
+                        <p>
+                            Abra um novo chamado e nossa equipe
+                            irá analisar sua solicitação.
+                        </p>
+
+                        <a href="abrir-chamado.html">
+                            Abrir chamado →
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <article class="informacao-card">
+
+                    <div class="informacao-numero">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>Acompanhe seus chamados</h3>
+
+                        <p>
+                            Consulte o status e veja as atualizações
+                            dos seus atendimentos.
+                        </p>
+
+                        <a href="chamados.html">
+                            Ver chamados →
+                        </a>
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="../../js/cliente-dashboard.js"></script>
+</body>
+
+</html>

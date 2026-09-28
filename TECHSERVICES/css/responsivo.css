@@ -1,0 +1,863 @@
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .navegacao {
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-conteudo {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-card {
+        max-width: 650px;
+    }
+
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .sobre-destaque {
+        min-height: 280px;
+    }
+
+    .processo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 25px;
+    }
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .container {
+        width: min(92%, 600px);
+    }
+
+    .cabecalho-conteudo {
+        min-height: 68px;
+    }
+
+    .navegacao,
+    .botao-login {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-texto p {
+        font-size: 0.95rem;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+    }
+
+    .hero-botoes .botao {
+        width: 100%;
+    }
+
+    .hero-card {
+        padding: 20px;
+    }
+
+    .card-informacoes {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .servicos,
+    .sobre,
+    .processo {
+        padding: 75px 0;
+    }
+
+    .titulo-secao {
+        margin-bottom: 35px;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servico-card {
+        padding: 25px;
+    }
+
+    .sobre-destaque {
+        min-height: 230px;
+    }
+
+    .sobre-destaque strong {
+        font-size: 2.3rem;
+    }
+
+    .processo-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cta {
+        padding: 65px 0;
+    }
+
+    .cta-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta .botao {
+        width: 100%;
+    }
+
+    .rodape-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .rodape-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .rodape-final {
+        grid-column: auto;
+    }
+}
+/* ==============================
+   LOGIN - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-apresentacao {
+        min-height: auto;
+        padding: 45px 7%;
+        gap: 50px;
+    }
+
+    .login-mensagem {
+        max-width: 700px;
+    }
+
+    .login-beneficios {
+        max-width: 700px;
+    }
+
+    .login-formulario {
+        min-height: 600px;
+    }
+}
+
+
+/* ==============================
+   LOGIN - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .login-apresentacao {
+        padding: 30px 6%;
+        gap: 45px;
+    }
+
+    .login-mensagem h1 {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+
+    .login-beneficios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .login-beneficios div {
+        padding-top: 12px;
+    }
+
+    .login-formulario {
+        padding: 45px 6%;
+    }
+
+    .formulario-cabecalho h2 {
+        font-size: 1.9rem;
+    }
+}
+/* ==============================
+   PORTAL - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .portal-layout {
+        grid-template-columns: 210px 1fr;
+    }
+
+    .sidebar {
+        padding: 25px 15px;
+    }
+
+    .portal-main {
+        padding: 40px 30px;
+    }
+
+    .resumo-chamados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabela-chamados {
+        overflow-x: auto;
+    }
+
+    .tabela-cabecalho,
+    .chamado-linha {
+        min-width: 750px;
+    }
+}
+
+
+/* ==============================
+   PORTAL - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .portal-layout {
+        display: block;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo-sidebar {
+        margin-bottom: 25px;
+    }
+
+    .usuario-resumo {
+        padding-bottom: 20px;
+    }
+
+    .sidebar-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        padding: 11px;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .portal-main {
+        padding: 35px 5%;
+    }
+
+    .portal-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+
+    .portal-header .botao {
+        width: 100%;
+    }
+
+    .resumo-chamados {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .resumo-card {
+        padding: 18px;
+    }
+
+    .resumo-card strong {
+        font-size: 1.6rem;
+    }
+
+    .secao-cabecalho {
+        align-items: center;
+    }
+
+    .secao-cabecalho h2 {
+        font-size: 1.5rem;
+    }
+
+    .tabela-chamados {
+        overflow-x: auto;
+    }
+
+    .tabela-cabecalho,
+    .chamado-linha {
+        min-width: 750px;
+    }
+
+    .portal-informacoes {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==============================
+   FORMULÁRIO - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .formulario-chamado {
+        max-width: 100%;
+    }
+
+    .prioridades {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ==============================
+   FORMULÁRIO - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .formulario-bloco {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .prioridades {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-acoes {
+        flex-direction: column-reverse;
+    }
+
+    .formulario-acoes .botao {
+        width: 100%;
+    }
+}
+/* ==============================
+   CHAMADOS - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .filtros-chamados {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filtro-busca {
+        grid-column: 1 / -1;
+    }
+
+    .chamado-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .chamado-dados {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .chamado-seta {
+        display: none;
+    }
+}
+
+
+/* ==============================
+   CHAMADOS - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .filtros-chamados {
+        grid-template-columns: 1fr;
+        padding: 17px;
+    }
+
+    .filtro-busca {
+        grid-column: auto;
+    }
+
+    .lista-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .chamado-card {
+        padding: 20px;
+    }
+
+    .chamado-dados {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .paginacao {
+        margin-bottom: 20px;
+    }
+}
+/* ==============================
+   DETALHES - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .detalhes-resumo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detalhes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detalhes-lateral {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    .tecnico-card {
+        grid-row: span 2;
+    }
+}
+
+
+/* ==============================
+   DETALHES - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .detalhes-identificacao {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .detalhes-identificacao .status {
+        margin-top: 5px;
+    }
+
+    .detalhes-resumo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .detalhes-resumo > div {
+        padding: 16px;
+    }
+
+    .detalhes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detalhes-lateral {
+        display: flex;
+    }
+
+    .detalhes-card {
+        padding: 22px;
+    }
+
+    .historico-cabecalho {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+/* ==============================
+   PERFIL - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .perfil-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .conta-card {
+        grid-column: auto;
+    }
+}
+
+
+/* ==============================
+   PERFIL - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .perfil-card {
+        padding: 22px;
+    }
+
+    .perfil-card .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-acoes .botao {
+        width: 100%;
+    }
+
+    .conta-informacoes {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .preferencia-item {
+        align-items: flex-start;
+    }
+}
+/* ==============================
+   ADMIN - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .admin-metricas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-tabela {
+        overflow-x: auto;
+    }
+
+    .admin-tabela-cabecalho,
+    .admin-linha {
+        min-width: 750px;
+    }
+
+    .equipe-resumo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .tecnicos-online {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ==============================
+   ADMIN - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .admin-metricas {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .admin-metrica {
+        padding: 17px;
+    }
+
+    .metrica-topo {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .metrica-topo strong {
+        font-size: 1.5rem;
+    }
+
+    .admin-card {
+        padding: 20px;
+    }
+
+    .admin-card-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .grafico-legenda {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categorias-admin > div {
+        grid-template-columns: 70px 1fr 25px;
+    }
+
+    .equipe-resumo {
+        padding: 20px;
+    }
+
+    .tecnicos-online {
+        flex-direction: column;
+    }
+
+    .tecnico-mini {
+        width: 100%;
+    }
+}
+/* ==============================
+   CHAMADOS ADMIN - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .filtros-card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filtro-busca {
+        grid-column: 1 / -1;
+    }
+
+    .botao-filtro {
+        width: 100%;
+    }
+
+    .admin-lista-card {
+        overflow-x: auto;
+    }
+
+    .lista-cabecalho,
+    .chamados-admin-lista,
+    .paginacao {
+        min-width: 750px;
+    }
+
+    .chamado-admin {
+        grid-template-columns:
+            65px
+            minmax(220px, 1fr)
+            100px
+            80px
+            110px;
+    }
+}
+
+
+/* ==============================
+   CHAMADOS ADMIN - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .filtros-card {
+        grid-template-columns: 1fr;
+    }
+
+    .filtro-busca {
+        grid-column: auto;
+    }
+
+    .lista-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-lista-card {
+        overflow-x: auto;
+    }
+
+    .lista-cabecalho,
+    .chamados-admin-lista,
+    .paginacao {
+        min-width: 680px;
+    }
+}
+/* ==============================
+   ATENDIMENTO - TABLET
+================================= */
+
+@media (max-width: 1023px) {
+
+    .atendimento-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .controle-card {
+        order: -1;
+    }
+
+    .controle-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .controle-card .card-section-titulo {
+        grid-column: 1 / -1;
+        margin-bottom: 5px;
+    }
+
+    .controle-card .botao-salvar {
+        align-self: end;
+    }
+
+    .dados-chamado {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ==============================
+   ATENDIMENTO - MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+    .atendimento-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .atendimento-titulo {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .atendimento-titulo h1 {
+        font-size: 1.35rem;
+    }
+
+    .controle-card {
+        display: block;
+    }
+
+    .controle-card .card-section-titulo {
+        margin-bottom: 25px;
+    }
+
+    .dados-chamado {
+        display: flex;
+    }
+
+    .conversa-card {
+        padding: 18px;
+    }
+
+    .mensagem {
+        padding: 15px;
+    }
+
+    .mensagem-meta {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .resposta-acoes {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .resposta-acoes .botao {
+        width: 100%;
+    }
+}
+/* ==============================
+   AUTENTICAÇÃO - TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .autenticacao {
+        grid-template-columns: 1fr;
+    }
+
+    .autenticacao-apresentacao {
+        min-height: 320px;
+        padding: 35px 8%;
+    }
+
+    .apresentacao-conteudo {
+        margin-top: 50px;
+    }
+
+    .apresentacao-footer {
+        display: none;
+    }
+
+}
+
+
+/* ==============================
+   AUTENTICAÇÃO - MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .autenticacao-apresentacao {
+        min-height: 260px;
+        padding: 25px;
+    }
+
+    .apresentacao-conteudo {
+        margin-top: 35px;
+    }
+
+    .apresentacao-conteudo h1 {
+        font-size: 2rem;
+    }
+
+    .apresentacao-conteudo p {
+        margin-top: 15px;
+        font-size: 0.75rem;
+    }
+
+    .autenticacao-formulario {
+        padding: 35px 25px;
+    }
+
+    .formulario-auth {
+        max-width: none;
+    }
+
+}

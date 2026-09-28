@@ -1,0 +1,56 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Maria Eduarda",
+      "email": "maria@email.com",
+      "senha": "123456",
+      "tipo": "cliente"
+    },
+    {
+      "id": 2,
+      "nome": "Administrador",
+      "email": "admin@techservices.com",
+      "senha": "admin123",
+      "tipo": "admin"
+    }
+  ],
+  "chamados": [
+    {
+      "id": 1024,
+      "usuarioId": 1,
+      "titulo": "Não consigo acessar o sistema",
+      "categoria": "software",
+      "prioridade": "alta",
+      "descricao": "Não consigo acessar o sistema da empresa.",
+      "status": "em andamento",
+      "data": "24/08/2026"
+    },
+    {
+      "id": 1025,
+      "usuarioId": 1,
+      "titulo": "computador não conectado",
+      "categoria": "hardware",
+      "prioridade": "alta",
+      "descricao": "computador parou de funcionar e deu tela preta",
+      "dispositivo": "computador",
+      "sistemaOperacional": "windows",
+      "contato": "email",
+      "status": "aberto",
+      "data": "31/08/2026"
+    },
+    {
+      "id": 1026,
+      "usuarioId": 1,
+      "titulo": "o servidor não esta conectado a internet",
+      "categoria": "rede",
+      "prioridade": "media",
+      "descricao": "o servidor não esta conectado a internet, cabo com mal contato, favor trazer um cabo novo",
+      "dispositivo": "servidor",
+      "sistemaOperacional": "outro",
+      "contato": "whatsapp",
+      "status": "aberto",
+      "data": "31/08/2026"
+    }
+  ]
+}

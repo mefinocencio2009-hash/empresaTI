@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Painel administrativo da TechServices."
+    >
+
+    <title>Administração | TechServices</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+</head>
+
+<body class="portal">
+
+    <div class="portal-layout">
+
+        <!-- ==============================
+             MENU ADMINISTRATIVO
+        ================================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../../index.html" class="logo logo-sidebar">
+                    TECH<span>SERVICES</span>
+                </a>
+
+                <div class="usuario-resumo">
+
+                    <div class="avatar">
+                        AD
+                    </div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <span>Equipe TechServices</span>
+                    </div>
+
+                </div>
+
+
+                <nav class="sidebar-nav" aria-label="Menu administrativo">
+
+                    <a href="dashboard.html" class="nav-item ativo">
+                        <span>01</span>
+                        Dashboard
+                    </a>
+
+                    <a href="chamados.html" class="nav-item">
+                        <span>02</span>
+                        Chamados
+                    </a>
+
+                    <a href="detalhes-chamado.html" class="nav-item">
+                        <span>03</span>
+                        Atendimento
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="suporte-sidebar">
+
+                    <small>PAINEL ADMINISTRATIVO</small>
+
+                    <p>
+                        Gerencie os atendimentos e acompanhe a equipe.
+                    </p>
+
+                </div>
+
+                <a href="../../index.html" class="sair">
+                    ← Sair do painel
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ==============================
+             CONTEÚDO
+        ================================= -->
+
+        <main class="portal-main">
+
+            <header class="portal-header">
+
+                <div>
+
+                    <span class="tag">
+                        ADMINISTRAÇÃO
+                    </span>
+
+                    <h1>Painel de atendimento</h1>
+
+                    <p>
+                        Acompanhe os chamados e a operação da TechServices.
+                    </p>
+
+                </div>
+
+                <span class="admin-status">
+                    <span></span>
+                    Sistema operacional
+                </span>
+
+            </header>
+
+
+            <!-- ==============================
+                 MÉTRICAS
+            ================================= -->
+
+            <section
+                class="admin-metricas"
+                aria-label="Resumo dos atendimentos"
+            >
+
+                <article class="admin-metrica">
+
+                    <div class="metrica-topo">
+
+                        <span>
+                            Chamados abertos
+                        </span>
+
+                        <strong>
+                            03
+                        </strong>
+
+                    </div>
+
+                    <p>
+                        +2 desde ontem
+                    </p>
+
+                </article>
+
+
+                <article class="admin-metrica">
+
+                    <div class="metrica-topo">
+
+                        <span>
+                            Em andamento
+                        </span>
+
+                        <strong>
+                            05
+                        </strong>
+
+                    </div>
+
+                    <p>
+                        2 aguardando técnico
+                    </p>
+
+                </article>
+
+
+                <article class="admin-metrica">
+
+                    <div class="metrica-topo">
+
+                        <span>
+                            Resolvidos
+                        </span>
+
+                        <strong>
+                            18
+                        </strong>
+
+                    </div>
+
+                    <p>
+                        Neste mês
+                    </p>
+
+                </article>
+
+
+                <article class="admin-metrica">
+
+                    <div class="metrica-topo">
+
+                        <span>
+                            Tempo médio
+                        </span>
+
+                        <strong>
+                            2h
+                        </strong>
+
+                    </div>
+
+                    <p>
+                        -18% em relação ao mês anterior
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- ==============================
+                 VISÃO GERAL
+            ================================= -->
+
+            <section class="admin-grid">
+
+
+                <!-- DISTRIBUIÇÃO -->
+
+                <article class="admin-card distribuicao-card">
+
+                    <div class="admin-card-cabecalho">
+
+                        <div>
+
+                            <span class="tag">
+                                VISÃO GERAL
+                            </span>
+
+                            <h2>
+                                Chamados por status
+                            </h2>
+
+                        </div>
+
+                        <span>
+                            Agosto 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="status-grafico">
+
+                        <div class="barra-status">
+
+                            <div
+                                class="barra preenchida-aberto"
+                                style="width: 30%;"
+                            ></div>
+
+                        </div>
+
+                        <div class="grafico-legenda">
+
+                            <div>
+                                <span class="ponto aberto"></span>
+                                <span>Aberto</span>
+                                <strong>03</strong>
+                            </div>
+
+                            <div>
+                                <span class="ponto andamento"></span>
+                                <span>Em andamento</span>
+                                <strong>05</strong>
+                            </div>
+
+                            <div>
+                                <span class="ponto resolvido"></span>
+                                <span>Resolvido</span>
+                                <strong>18</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CATEGORIAS -->
+
+                <article class="admin-card">
+
+                    <div class="admin-card-cabecalho">
+
+                        <div>
+
+                            <span class="tag">
+                                CATEGORIAS
+                            </span>
+
+                            <h2>
+                                Tipos de solicitação
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="categorias-admin">
+
+                        <div>
+
+                            <span>Software</span>
+
+                            <div class="categoria-barra">
+                                <span style="width: 75%;"></span>
+                            </div>
+
+                            <strong>12</strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Hardware</span>
+
+                            <div class="categoria-barra">
+                                <span style="width: 55%;"></span>
+                            </div>
+
+                            <strong>08</strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Rede</span>
+
+                            <div class="categoria-barra">
+                                <span style="width: 40%;"></span>
+                            </div>
+
+                            <strong>05</strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Outros</span>
+
+                            <div class="categoria-barra">
+                                <span style="width: 25%;"></span>
+                            </div>
+
+                            <strong>03</strong>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- ==============================
+                 CHAMADOS PRIORITÁRIOS
+            ================================= -->
+
+            <section class="admin-card chamados-prioritarios">
+
+                <div class="admin-card-cabecalho">
+
+                    <div>
+
+                        <span class="tag">
+                            ATENÇÃO
+                        </span>
+
+                        <h2>
+                            Chamados prioritários
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="chamados.html"
+                        class="link-secao"
+                    >
+                        Ver todos →
+                    </a>
+
+                </div>
+
+
+                <div class="admin-tabela">
+
+                    <div class="admin-tabela-cabecalho">
+
+                        <span>Chamado</span>
+                        <span>Cliente</span>
+                        <span>Categoria</span>
+                        <span>Prioridade</span>
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="admin-linha"
+                    >
+
+                        <div>
+
+                            <strong>#1024</strong>
+
+                            <span>
+                                Não consigo acessar o sistema
+                            </span>
+
+                        </div>
+
+                        <span>
+                            Maria Eduarda
+                        </span>
+
+                        <span>
+                            Software
+                        </span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span class="status andamento">
+                            Em andamento
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="admin-linha"
+                    >
+
+                        <div>
+
+                            <strong>#1023</strong>
+
+                            <span>
+                                Computador apresentando lentidão
+                            </span>
+
+                        </div>
+
+                        <span>
+                            João Santos
+                        </span>
+
+                        <span>
+                            Hardware
+                        </span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span class="status aberto">
+                            Aberto
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="detalhes-chamado.html"
+                        class="admin-linha"
+                    >
+
+                        <div>
+
+                            <strong>#1021</strong>
+
+                            <span>
+                                Problema na conexão de internet
+                            </span>
+
+                        </div>
+
+                        <span>
+                            Ana Oliveira
+                        </span>
+
+                        <span>
+                            Rede
+                        </span>
+
+                        <span class="prioridade alta">
+                            Alta
+                        </span>
+
+                        <span class="status aberto">
+                            Aberto
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==============================
+                 EQUIPE
+            ================================= -->
+
+            <section class="equipe-resumo">
+
+                <div>
+
+                    <span class="tag">
+                        EQUIPE
+                    </span>
+
+                    <h2>
+                        Técnicos online
+                    </h2>
+
+                </div>
+
+
+                <div class="tecnicos-online">
+
+                    <div class="tecnico-mini">
+
+                        <div class="mini-avatar">
+                            LA
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Lucas Almeida
+                            </strong>
+
+                            <span>
+                                3 chamados
+                            </span>
+
+                        </div>
+
+                        <span class="online"></span>
+
+                    </div>
+
+
+                    <div class="tecnico-mini">
+
+                        <div class="mini-avatar">
+                            CS
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Carla Souza
+                            </strong>
+
+                            <span>
+                                2 chamados
+                            </span>
+
+                        </div>
+
+                        <span class="online"></span>
+
+                    </div>
+
+
+                    <div class="tecnico-mini">
+
+                        <div class="mini-avatar">
+                            RM
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Rafael Martins
+                            </strong>
+
+                            <span>
+                                0 chamados
+                            </span>
+
+                        </div>
+
+                        <span class="online"></span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="../../js/admin-dashboard.js"></script>
+</body>
+
+</html>

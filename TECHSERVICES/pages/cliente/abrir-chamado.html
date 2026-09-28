@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Abra um novo chamado de suporte na TechServices.">
+
+    <title>Abrir Chamado | TechServices</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+</head>
+
+<body class="portal">
+
+    <div class="portal-layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../../index.html" class="logo logo-sidebar">
+                    TECH<span>SERVICES</span>
+                </a>
+
+                <div class="usuario-resumo">
+
+                    <div class="avatar">
+                        MD
+                    </div>
+
+                    <div>
+                        <strong>Maria Eduarda</strong>
+                        <span>Cliente</span>
+                    </div>
+
+                </div>
+
+                <nav class="sidebar-nav" aria-label="Menu do portal">
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span>01</span>
+                        Dashboard
+                    </a>
+
+                    <a href="abrir-chamado.html" class="nav-item ativo">
+                        <span>02</span>
+                        Abrir chamado
+                    </a>
+
+                    <a href="chamados.html" class="nav-item">
+                        <span>03</span>
+                        Meus chamados
+                    </a>
+
+                    <a href="perfil.html" class="nav-item">
+                        <span>04</span>
+                        Meu perfil
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="suporte-sidebar">
+                    <small>PRECISA DE AJUDA?</small>
+
+                    <p>
+                        Nossa equipe está pronta para atender você.
+                    </p>
+
+                    <a href="abrir-chamado.html">
+                        Abrir chamado →
+                    </a>
+                </div>
+
+                <a href="../../index.html" class="sair">
+                    ← Sair do portal
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+        <main class="portal-main">
+
+            <header class="portal-header">
+
+                <div>
+                    <span class="tag">NOVO ATENDIMENTO</span>
+
+                    <h1>Abrir chamado</h1>
+
+                    <p>
+                        Descreva o problema e nossa equipe irá analisar sua solicitação.
+                    </p>
+                </div>
+
+                <a href="dashboard.html" class="botao botao-secundario">
+                    ← Voltar
+                </a>
+
+            </header>
+
+
+            <!-- FORMULÁRIO -->
+            <section class="formulario-chamado">
+
+                <form id="form-chamado">
+
+                    <!-- BLOCO 1 -->
+                    <fieldset class="formulario-bloco">
+
+                        <legend>01. Sobre o problema</legend>
+
+                        <p class="bloco-descricao">
+                            Informe algumas informações básicas para identificarmos
+                            o tipo de atendimento necessário.
+                        </p>
+
+
+                        <div class="form-grid">
+
+                            <div class="campo">
+                                <label for="titulo">
+                                    Título do chamado
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="titulo"
+                                    name="titulo"
+                                    placeholder="Ex.: Computador não conecta à internet"
+                                    minlength="5"
+                                    maxlength="80"
+                                    required
+                                >
+
+                                <small>
+                                    Seja breve e descreva o problema.
+                                </small>
+                            </div>
+
+
+                            <div class="campo">
+                                <label for="categoria">
+                                    Categoria
+                                    <span>*</span>
+                                </label>
+
+                                <select
+                                    id="categoria"
+                                    name="categoria"
+                                    required
+                                >
+                                    <option value="">
+                                        Selecione uma categoria
+                                    </option>
+
+                                    <option value="hardware">
+                                        Hardware
+                                    </option>
+
+                                    <option value="software">
+                                        Software
+                                    </option>
+
+                                    <option value="rede">
+                                        Rede e Internet
+                                    </option>
+
+                                    <option value="sistema">
+                                        Sistema
+                                    </option>
+
+                                    <option value="seguranca">
+                                        Segurança
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro
+                                    </option>
+                                </select>
+                            </div>
+
+
+                            <div class="campo campo-completo">
+
+                                <label for="descricao">
+                                    Descrição do problema
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    id="descricao"
+                                    name="descricao"
+                                    rows="6"
+                                    minlength="20"
+                                    maxlength="1000"
+                                    placeholder="Explique o que aconteceu, quando começou e o que você estava fazendo no momento..."
+                                    required
+                                ></textarea>
+
+                                <small>
+                                    Mínimo de 20 caracteres.
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- BLOCO 2 -->
+                    <fieldset class="formulario-bloco">
+
+                        <legend>02. Prioridade</legend>
+
+                        <p class="bloco-descricao">
+                            Informe o impacto que esse problema está causando.
+                        </p>
+
+
+                        <div class="prioridades">
+
+                            <label class="prioridade-opcao">
+
+                                <input
+                                    type="radio"
+                                    name="prioridade"
+                                    value="baixa"
+                                    required
+                                >
+
+                                <div>
+                                    <strong>Baixa</strong>
+
+                                    <span>
+                                        Problema que não impede o trabalho.
+                                    </span>
+                                </div>
+
+                            </label>
+
+
+                            <label class="prioridade-opcao">
+
+                                <input
+                                    type="radio"
+                                    name="prioridade"
+                                    value="media"
+                                >
+
+                                <div>
+                                    <strong>Média</strong>
+
+                                    <span>
+                                        Problema que dificulta o trabalho.
+                                    </span>
+                                </div>
+
+                            </label>
+
+
+                            <label class="prioridade-opcao">
+
+                                <input
+                                    type="radio"
+                                    name="prioridade"
+                                    value="alta"
+                                >
+
+                                <div>
+                                    <strong>Alta</strong>
+
+                                    <span>
+                                        Problema que impede uma atividade importante.
+                                    </span>
+                                </div>
+
+                            </label>
+
+
+                            <label class="prioridade-opcao">
+
+                                <input
+                                    type="radio"
+                                    name="prioridade"
+                                    value="urgente"
+                                >
+
+                                <div>
+                                    <strong>Urgente</strong>
+
+                                    <span>
+                                        Problema crítico que afeta a operação.
+                                    </span>
+                                </div>
+
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- BLOCO 3 -->
+                    <fieldset class="formulario-bloco">
+
+                        <legend>03. Informações adicionais</legend>
+
+                        <p class="bloco-descricao">
+                            Essas informações ajudam nossa equipe a entender melhor
+                            o ambiente onde ocorreu o problema.
+                        </p>
+
+
+                        <div class="form-grid">
+
+                            <div class="campo">
+
+                                <label for="dispositivo">
+                                    Dispositivo
+                                </label>
+
+                                <select id="dispositivo" name="dispositivo">
+
+                                    <option value="">
+                                        Selecione
+                                    </option>
+
+                                    <option value="computador">
+                                        Computador
+                                    </option>
+
+                                    <option value="notebook">
+                                        Notebook
+                                    </option>
+
+                                    <option value="celular">
+                                        Celular
+                                    </option>
+
+                                    <option value="tablet">
+                                        Tablet
+                                    </option>
+
+                                    <option value="servidor">
+                                        Servidor
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="campo">
+
+                                <label for="sistema-operacional">
+                                    Sistema operacional
+                                </label>
+
+                                <select
+                                    id="sistema-operacional"
+                                    name="sistema-operacional"
+                                >
+
+                                    <option value="">
+                                        Selecione
+                                    </option>
+
+                                    <option value="windows">
+                                        Windows
+                                    </option>
+
+                                    <option value="macos">
+                                        macOS
+                                    </option>
+
+                                    <option value="linux">
+                                        Linux
+                                    </option>
+
+                                    <option value="android">
+                                        Android
+                                    </option>
+
+                                    <option value="ios">
+                                        iOS
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="campo campo-completo">
+
+                                <label for="contato">
+                                    Melhor forma de contato
+                                </label>
+
+                                <select id="contato" name="contato">
+
+                                    <option value="">
+                                        Selecione
+                                    </option>
+
+                                    <option value="email">
+                                        E-mail
+                                    </option>
+
+                                    <option value="telefone">
+                                        Telefone
+                                    </option>
+
+                                    <option value="whatsapp">
+                                        WhatsApp
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- AVISO -->
+                    <div class="aviso-formulario">
+
+                        <strong>Antes de enviar</strong>
+
+                        <p>
+                            Confira as informações preenchidas. Após o envio,
+                            você poderá acompanhar o andamento do chamado
+                            pelo portal.
+                        </p>
+
+                    </div>
+
+
+                    <!-- AÇÕES -->
+                    <div class="formulario-acoes">
+
+                        <a href="dashboard.html" class="botao botao-secundario">
+                            Cancelar
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="botao botao-principal"
+                        >
+                            Enviar chamado
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="../../js/cliente-formulario.js"></script>
+</body>
+
+</html>

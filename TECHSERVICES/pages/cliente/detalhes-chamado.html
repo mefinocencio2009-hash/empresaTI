@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta
+    name="description"
+    content="Detalhes e acompanhamento de chamado TechServices."
+>
+
+<title>Detalhes do Chamado | TechServices</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/responsivo.css">
+
+
+</head>
+
+<body class="portal">
+
+
+<div class="portal-layout">
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="../../index.html" class="logo logo-sidebar">
+                TECH<span>SERVICES</span>
+            </a>
+
+            <div class="usuario-resumo">
+
+                <div class="avatar" id="avatar-usuario">
+                    MD
+                </div>
+
+                <div>
+                    <strong id="nome-usuario">Cliente</strong>
+                    <span>Cliente</span>
+                </div>
+
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Menu do portal">
+
+                <a href="dashboard.html" class="nav-item">
+                    <span>01</span>
+                    Dashboard
+                </a>
+
+                <a href="abrir-chamado.html" class="nav-item">
+                    <span>02</span>
+                    Abrir chamado
+                </a>
+
+                <a href="chamados.html" class="nav-item ativo">
+                    <span>03</span>
+                    Meus chamados
+                </a>
+
+                <a href="perfil.html" class="nav-item">
+                    <span>04</span>
+                    Meu perfil
+                </a>
+
+            </nav>
+
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <div class="suporte-sidebar">
+
+                <small>PRECISA DE AJUDA?</small>
+
+                <p>
+                    Nossa equipe está pronta para atender você.
+                </p>
+
+                <a href="abrir-chamado.html">
+                    Abrir chamado →
+                </a>
+
+            </div>
+
+            <a href="../../index.html" class="sair">
+                ← Sair do portal
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="portal-main">
+
+        <header class="detalhes-topo">
+
+            <a href="chamados.html" class="voltar-chamados">
+                ← Voltar para meus chamados
+            </a>
+
+            <div class="detalhes-identificacao">
+
+                <div>
+
+                    <span class="tag" id="numero-chamado">
+                        CHAMADO
+                    </span>
+
+                    <h1 id="titulo-chamado">
+                        Carregando chamado...
+                    </h1>
+
+                    <p id="data-chamado">
+                        Carregando...
+                    </p>
+
+                </div>
+
+                <span
+                    class="status andamento"
+                    id="status-chamado"
+                >
+                    Carregando
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- RESUMO -->
+        <section class="detalhes-resumo">
+
+            <div>
+                <small>Categoria</small>
+                <strong id="categoria-chamado">
+                    -
+                </strong>
+            </div>
+
+            <div>
+                <small>Prioridade</small>
+
+                <span
+                    class="prioridade alta"
+                    id="prioridade-chamado"
+                >
+                    -
+                </span>
+            </div>
+
+            <div>
+                <small>Técnico responsável</small>
+
+                <strong id="tecnico-chamado">
+                    Aguardando atendimento
+                </strong>
+            </div>
+
+            <div>
+                <small>Última atualização</small>
+
+                <strong id="atualizacao-chamado">
+                    -
+                </strong>
+            </div>
+
+        </section>
+
+
+        <!-- GRID -->
+        <div class="detalhes-grid">
+
+            <!-- COLUNA PRINCIPAL -->
+            <div class="detalhes-conteudo">
+
+                <!-- DESCRIÇÃO -->
+                <section class="detalhes-card">
+
+                    <div class="card-titulo">
+
+                        <span class="tag">
+                            SOLICITAÇÃO
+                        </span>
+
+                        <h2>
+                            Descrição do problema
+                        </h2>
+
+                    </div>
+
+                    <div
+                        class="descricao-chamado"
+                        id="descricao-chamado"
+                    >
+                        Carregando descrição...
+                    </div>
+
+                </section>
+
+
+                <!-- HISTÓRICO -->
+                <section class="detalhes-card">
+
+                    <div class="card-titulo">
+
+                        <span class="tag">
+                            ACOMPANHAMENTO
+                        </span>
+
+                        <h2>
+                            Histórico do atendimento
+                        </h2>
+
+                    </div>
+
+                    <div class="historico">
+
+                        <article class="historico-item">
+
+                            <div class="historico-marcador">
+                                01
+                            </div>
+
+                            <div class="historico-conteudo">
+
+                                <div class="historico-cabecalho">
+
+                                    <strong>
+                                        Chamado aberto
+                                    </strong>
+
+                                    <span id="historico-data">
+                                        -
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    A solicitação foi registrada
+                                    com sucesso no sistema.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- MENSAGEM -->
+                <section class="detalhes-card">
+
+                    <div class="card-titulo">
+
+                        <span class="tag">
+                            COMUNICAÇÃO
+                        </span>
+
+                        <h2>
+                            Adicionar mensagem
+                        </h2>
+
+                    </div>
+
+                    <form id="form-mensagem">
+
+                        <div class="campo">
+
+                            <label for="mensagem">
+                                Sua mensagem
+                            </label>
+
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                rows="5"
+                                minlength="5"
+                                maxlength="500"
+                                placeholder="Escreva uma informação adicional para a equipe..."
+                            ></textarea>
+
+                            <small>
+                                Máximo de 500 caracteres.
+                            </small>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="botao botao-principal"
+                        >
+                            Enviar mensagem
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+
+            <!-- COLUNA LATERAL -->
+            <aside class="detalhes-lateral">
+
+                <!-- RESPONSÁVEL -->
+                <section class="detalhes-card tecnico-card">
+
+                    <span class="tag">
+                        RESPONSÁVEL
+                    </span>
+
+                    <div class="tecnico-avatar">
+                        TS
+                    </div>
+
+                    <h3 id="nome-tecnico">
+                        Aguardando atendimento
+                    </h3>
+
+                    <p>
+                        Técnico de suporte
+                    </p>
+
+                    <div class="tecnico-status">
+
+                        <span></span>
+
+                        <span id="status-tecnico">
+                            Aguardando atendimento
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+                <!-- INFORMAÇÕES -->
+                <section class="detalhes-card">
+
+                    <span class="tag">
+                        INFORMAÇÕES
+                    </span>
+
+                    <div class="informacoes-lista">
+
+                        <div>
+                            <small>Dispositivo</small>
+
+                            <strong id="dispositivo-chamado">
+                                Não informado
+                            </strong>
+                        </div>
+
+                        <div>
+                            <small>Sistema operacional</small>
+
+                            <strong id="sistema-chamado">
+                                Não informado
+                            </strong>
+                        </div>
+
+                        <div>
+                            <small>Canal de contato</small>
+
+                            <strong id="contato-chamado">
+                                Não informado
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- AÇÕES -->
+                <section class="detalhes-card">
+
+                    <span class="tag">
+                        AÇÕES
+                    </span>
+
+                    <div class="acoes-chamado">
+
+                        <button
+                            type="button"
+                            onclick="window.print()"
+                        >
+                            Imprimir chamado
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../../js/cliente-detalhes.js"></script>
+
+
+</body>
+
+</html>

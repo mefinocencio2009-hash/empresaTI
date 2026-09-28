@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Detalhes e gerenciamento de chamado da TechServices."
+    >
+
+    <title>Atendimento #1024 | TechServices</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+</head>
+
+<body class="portal">
+
+    <div class="portal-layout">
+
+        <!-- MENU -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../../index.html" class="logo logo-sidebar">
+                    TECH<span>SERVICES</span>
+                </a>
+
+                <div class="usuario-resumo">
+
+                    <div class="avatar">
+                        AD
+                    </div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <span>Equipe TechServices</span>
+                    </div>
+
+                </div>
+
+                <nav class="sidebar-nav" aria-label="Menu administrativo">
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span>01</span>
+                        Dashboard
+                    </a>
+
+                    <a href="chamados.html" class="nav-item">
+                        <span>02</span>
+                        Chamados
+                    </a>
+
+                    <a href="detalhes-chamado.html" class="nav-item ativo">
+                        <span>03</span>
+                        Atendimento
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="suporte-sidebar">
+
+                    <small>ATENDIMENTO</small>
+
+                    <p>
+                        Resolva as solicitações dos clientes.
+                    </p>
+
+                </div>
+
+                <a href="../../index.html" class="sair">
+                    ← Sair do painel
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+
+        <main class="portal-main">
+
+            <!-- CABEÇALHO -->
+
+            <header class="atendimento-header">
+
+                <div>
+
+                    <a href="chamados.html" class="voltar-link">
+                        ← Voltar para chamados
+                    </a>
+
+                    <div class="atendimento-titulo">
+
+                        <span class="numero-atendimento">
+                            #1024
+                        </span>
+
+                        <h1>
+                            Não consigo acessar o sistema
+                        </h1>
+
+                    </div>
+
+                    <p>
+                        Aberto hoje às 09:42 por Maria Eduarda
+                    </p>
+
+                </div>
+
+                <span class="status andamento" id="status-topo">
+                    Em andamento
+                </span>
+
+            </header>
+
+
+            <div class="atendimento-layout">
+
+                <!-- ==============================
+                     CONVERSA
+                ================================= -->
+
+                <section class="conversa-card">
+
+                    <div class="card-section-titulo">
+
+                        <div>
+
+                            <span class="tag">
+                                SOLICITAÇÃO
+                            </span>
+
+                            <h2>
+                                Conversa com o cliente
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MENSAGEM DO CLIENTE -->
+
+                    <article class="mensagem cliente">
+
+                        <div class="mensagem-avatar">
+                            MD
+                        </div>
+
+                        <div class="mensagem-conteudo">
+
+                            <div class="mensagem-meta">
+
+                                <strong>
+                                    Maria Eduarda
+                                </strong>
+
+                                <span>
+                                    Hoje, 09:42
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Estou tentando acessar o sistema da empresa,
+                                mas aparece uma mensagem informando que não
+                                foi possível realizar o login.
+                            </p>
+
+                            <p>
+                                Já tentei redefinir minha senha, porém o
+                                problema continua acontecendo.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- RESPOSTA DO TÉCNICO -->
+
+                    <article class="mensagem tecnico">
+
+                        <div class="mensagem-avatar">
+                            LA
+                        </div>
+
+                        <div class="mensagem-conteudo">
+
+                            <div class="mensagem-meta">
+
+                                <strong>
+                                    Lucas Almeida
+                                </strong>
+
+                                <span>
+                                    Hoje, 10:15
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Olá, Maria! Estamos verificando o problema
+                                de acesso à sua conta.
+                            </p>
+
+                            <p>
+                                Identificamos uma instabilidade no serviço
+                                de autenticação. Nossa equipe já está
+                                trabalhando para normalizar o acesso.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- RESPOSTA -->
+
+                    <form
+                        class="responder-form"
+                        id="form-resposta"
+                    >
+
+                        <label for="resposta">
+                            Nova resposta
+                        </label>
+
+                        <textarea
+                            id="resposta"
+                            name="resposta"
+                            rows="5"
+                            placeholder="Digite uma mensagem para o cliente..."
+                            required
+                        ></textarea>
+
+                        <div class="resposta-acoes">
+
+                            <span>
+                                A resposta ficará registrada no chamado.
+                            </span>
+
+                            <button
+                                type="submit"
+                                class="botao botao-principal"
+                            >
+                                Enviar resposta
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+                <!-- ==============================
+                     CONTROLE DO CHAMADO
+                ================================= -->
+
+                <aside class="controle-card">
+
+                    <div class="card-section-titulo">
+
+                        <span class="tag">
+                            GERENCIAMENTO
+                        </span>
+
+                        <h2>
+                            Controle do chamado
+                        </h2>
+
+                    </div>
+
+
+                    <!-- STATUS -->
+
+                    <div class="controle-campo">
+
+                        <label for="alterar-status">
+                            Status
+                        </label>
+
+                        <select id="alterar-status">
+
+                            <option value="aberto">
+                                Aberto
+                            </option>
+
+                            <option
+                                value="andamento"
+                                selected
+                            >
+                                Em andamento
+                            </option>
+
+                            <option value="resolvido">
+                                Resolvido
+                            </option>
+
+                            <option value="cancelado">
+                                Cancelado
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PRIORIDADE -->
+
+                    <div class="controle-campo">
+
+                        <label for="alterar-prioridade">
+                            Prioridade
+                        </label>
+
+                        <select id="alterar-prioridade">
+
+                            <option value="alta" selected>
+                                Alta
+                            </option>
+
+                            <option value="media">
+                                Média
+                            </option>
+
+                            <option value="baixa">
+                                Baixa
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CATEGORIA -->
+
+                    <div class="controle-campo">
+
+                        <label for="alterar-categoria">
+                            Categoria
+                        </label>
+
+                        <select id="alterar-categoria">
+
+                            <option value="software" selected>
+                                Software
+                            </option>
+
+                            <option value="hardware">
+                                Hardware
+                            </option>
+
+                            <option value="rede">
+                                Rede
+                            </option>
+
+                            <option value="outros">
+                                Outros
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- TÉCNICO -->
+
+                    <div class="controle-campo">
+
+                        <label for="tecnico">
+                            Técnico responsável
+                        </label>
+
+                        <select id="tecnico">
+
+                            <option value="lucas" selected>
+                                Lucas Almeida
+                            </option>
+
+                            <option value="carla">
+                                Carla Souza
+                            </option>
+
+                            <option value="rafael">
+                                Rafael Martins
+                            </option>
+
+                            <option value="nenhum">
+                                Não atribuído
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="botao botao-principal botao-salvar"
+                        id="salvar-alteracoes"
+                    >
+                        Salvar alterações
+                    </button>
+
+
+                    <!-- INFORMAÇÕES -->
+
+                    <div class="dados-chamado">
+
+                        <div>
+
+                            <small>
+                                Cliente
+                            </small>
+
+                            <strong>
+                                Maria Eduarda
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <small>
+                                E-mail
+                            </small>
+
+                            <strong>
+                                maria@email.com
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Criado em
+                            </small>
+
+                            <strong>
+                                24/08/2026 às 09:42
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Última atualização
+                            </small>
+
+                            <strong>
+                                24/08/2026 às 10:15
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="../../js/admin-detalhes.js"></script>
+
+</body>
+
+</html>

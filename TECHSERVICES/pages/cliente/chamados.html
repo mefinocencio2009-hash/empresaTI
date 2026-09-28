@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Consulte seus chamados de suporte na TechServices.">
+
+    <title>Meus Chamados | TechServices</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+</head>
+
+<body class="portal">
+
+    <div class="portal-layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../../index.html" class="logo logo-sidebar">
+                    TECH<span>SERVICES</span>
+                </a>
+
+                <div class="usuario-resumo">
+
+                    <div class="avatar">
+                        MD
+                    </div>
+
+                    <div>
+                        <strong>Maria Eduarda</strong>
+                        <span>Cliente</span>
+                    </div>
+
+                </div>
+
+                <nav class="sidebar-nav" aria-label="Menu do portal">
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span>01</span>
+                        Dashboard
+                    </a>
+
+                    <a href="abrir-chamado.html" class="nav-item">
+                        <span>02</span>
+                        Abrir chamado
+                    </a>
+
+                    <a href="chamados.html" class="nav-item ativo">
+                        <span>03</span>
+                        Meus chamados
+                    </a>
+
+                    <a href="perfil.html" class="nav-item">
+                        <span>04</span>
+                        Meu perfil
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="suporte-sidebar">
+                    <small>PRECISA DE AJUDA?</small>
+
+                    <p>
+                        Nossa equipe está pronta para atender você.
+                    </p>
+
+                    <a href="abrir-chamado.html">
+                        Abrir chamado →
+                    </a>
+                </div>
+
+                <a href="../../index.html" class="sair">
+                    ← Sair do portal
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="portal-main">
+
+            <header class="portal-header">
+
+                <div>
+                    <span class="tag">ATENDIMENTOS</span>
+
+                    <h1>Meus chamados</h1>
+
+                    <p>
+                        Consulte e acompanhe todas as suas solicitações.
+                    </p>
+                </div>
+
+                <a href="abrir-chamado.html" class="botao botao-principal">
+                    + Novo chamado
+                </a>
+
+            </header>
+
+
+            <!-- FILTROS -->
+            <section class="filtros-chamados">
+
+                <div class="filtro-busca">
+
+                    <label for="buscar-chamado">
+                        Buscar chamado
+                    </label>
+
+                    <input
+                        type="search"
+                        id="buscar-chamado"
+                        placeholder="Número ou título do chamado..."
+                    >
+
+                </div>
+
+
+                <div class="filtro-status">
+
+                    <label for="filtro-status">
+                        Status
+                    </label>
+
+                    <select id="filtro-status">
+
+                        <option value="todos">
+                            Todos
+                        </option>
+
+                        <option value="aberto">
+                            Aberto
+                        </option>
+
+                        <option value="andamento">
+                            Em andamento
+                        </option>
+
+                        <option value="resolvido">
+                            Resolvido
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filtro-categoria">
+
+                    <label for="filtro-categoria">
+                        Categoria
+                    </label>
+
+                    <select id="filtro-categoria">
+
+                        <option value="todas">
+                            Todas
+                        </option>
+
+                        <option value="hardware">
+                            Hardware
+                        </option>
+
+                        <option value="software">
+                            Software
+                        </option>
+
+                        <option value="rede">
+                            Rede e Internet
+                        </option>
+
+                        <option value="sistema">
+                            Sistema
+                        </option>
+
+                        <option value="seguranca">
+                            Segurança
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- LISTA DE CHAMADOS -->
+            <section class="lista-chamados">
+
+                <div class="lista-cabecalho">
+
+                    <div>
+                        <span class="tag">13 CHAMADOS</span>
+
+                        <h2>Solicitações recentes</h2>
+                    </div>
+
+                    <span class="lista-atualizacao">
+                        Atualizado hoje
+                    </span>
+
+                </div>
+
+
+                <div class="chamados-lista">
+
+                    <!-- CHAMADO 1 -->
+                    <a href="detalhes-chamado.html" class="chamado-card">
+
+                        <div class="chamado-identificacao">
+
+                            <span class="chamado-numero">
+                                #1024
+                            </span>
+
+                            <h3>
+                                Não consigo acessar o sistema
+                            </h3>
+
+                            <p>
+                                Aberto em 24/08/2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="chamado-dados">
+
+                            <div>
+                                <small>Categoria</small>
+                                <span>Software</span>
+                            </div>
+
+                            <div>
+                                <small>Prioridade</small>
+                                <span class="prioridade alta">
+                                    Alta
+                                </span>
+                            </div>
+
+                            <div>
+                                <small>Status</small>
+                                <span class="status andamento">
+                                    Em andamento
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <span class="chamado-seta">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 2 -->
+                    <a href="detalhes-chamado.html" class="chamado-card">
+
+                        <div class="chamado-identificacao">
+
+                            <span class="chamado-numero">
+                                #1023
+                            </span>
+
+                            <h3>
+                                Computador apresentando lentidão
+                            </h3>
+
+                            <p>
+                                Aberto em 23/08/2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="chamado-dados">
+
+                            <div>
+                                <small>Categoria</small>
+                                <span>Hardware</span>
+                            </div>
+
+                            <div>
+                                <small>Prioridade</small>
+                                <span class="prioridade media">
+                                    Média
+                                </span>
+                            </div>
+
+                            <div>
+                                <small>Status</small>
+                                <span class="status aberto">
+                                    Aberto
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <span class="chamado-seta">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 3 -->
+                    <a href="detalhes-chamado.html" class="chamado-card">
+
+                        <div class="chamado-identificacao">
+
+                            <span class="chamado-numero">
+                                #1022
+                            </span>
+
+                            <h3>
+                                Instalação de software
+                            </h3>
+
+                            <p>
+                                Aberto em 20/08/2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="chamado-dados">
+
+                            <div>
+                                <small>Categoria</small>
+                                <span>Software</span>
+                            </div>
+
+                            <div>
+                                <small>Prioridade</small>
+                                <span class="prioridade baixa">
+                                    Baixa
+                                </span>
+                            </div>
+
+                            <div>
+                                <small>Status</small>
+                                <span class="status resolvido">
+                                    Resolvido
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <span class="chamado-seta">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- CHAMADO 4 -->
+                    <a href="detalhes-chamado.html" class="chamado-card">
+
+                        <div class="chamado-identificacao">
+
+                            <span class="chamado-numero">
+                                #1021
+                            </span>
+
+                            <h3>
+                                Problema na conexão de internet
+                            </h3>
+
+                            <p>
+                                Aberto em 18/08/2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="chamado-dados">
+
+                            <div>
+                                <small>Categoria</small>
+                                <span>Rede e Internet</span>
+                            </div>
+
+                            <div>
+                                <small>Prioridade</small>
+                                <span class="prioridade alta">
+                                    Alta
+                                </span>
+                            </div>
+
+                            <div>
+                                <small>Status</small>
+                                <span class="status resolvido">
+                                    Resolvido
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <span class="chamado-seta">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- PAGINAÇÃO -->
+            <nav class="paginacao" aria-label="Paginação dos chamados">
+
+                <button type="button" class="pagina-anterior">
+                    ←
+                </button>
+
+                <button type="button" class="pagina-atual">
+                    1
+                </button>
+
+                <button type="button">
+                    2
+                </button>
+
+                <button type="button">
+                    3
+                </button>
+
+                <span>...</span>
+
+                <button type="button">
+                    5
+                </button>
+
+                <button type="button" class="pagina-proxima">
+                    →
+                </button>
+
+            </nav>
+
+        </main>
+
+    </div>
+    <script src="../../js/cliente-chamados.js"></script>
+</body>
+
+</html>
